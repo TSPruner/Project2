@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Flack Messaging for:
+{% endblock %}
+
+{% block name %}
+<h3><span class="user"></span></h3>
+<form id="new-user">
+    <input id="name" autocomplete="off" maxlength=50 autofocus placeholder="Display Name" type="text">
+    <input id="name-submit" type="submit">
+</form>
+<h4 id="channel-card">Channels:</h4>
+<form id="chan-name">
+    <div class="form-check">
+      <div class="form-row align-items-start">
+        <div class="col-md-12">
+            <div id="new-channel"></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-check">
+        <button id="change" type=button>Select Channel</button>
+    </div>
+</form>    
+<form id="add-channel">
+    <input id="channel" autocomplete="off" maxlength=50 autofocus placeholder="Add Channel" type="text">
+    <input id="chan-submit" type="submit">
+</form>
+{% endblock %}
+
+{% block chan %}
+<div class="card mb-3">
+    <div class="row no-gutters">
+        <div class="col-md-2">
+            <span id="channel-title">: </span>
+        </div>
+        <div class="col-md-9">
+            <span id="channel-value"></span>
+        </div>
+        <div class="col-md-1">
+            <button id="msg-delete" title="Delete all messages for current user">Delete All</button>
+        </div>
+    </div>
+</div>    
+{% endblock %}
+
+{% block usermsg %}
+<span id="usermsg">
+    <ul id="chan-messages" style="list-style-type:none">
+        <div id="new-message"></div>
+    </ul>  
+    <form id="add-message">
+        <div class="form-row">
+            <div class="col-md-11">
+                <textarea class="form-control" maxlength=200 rows="2" id="message" name="message" placeholder="Add New Message Here"></textarea>
+            </div>
+            <div class="col-md-1">
+                <button id="msg-submit">Send</button>
+            </div>
+        </div>
+    </form>
+</span>
+{% endblock %}

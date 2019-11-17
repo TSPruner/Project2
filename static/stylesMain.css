@@ -1,0 +1,84 @@
+.row, h5, h4, h3, p {
+    font-family: Arial, sans-serif;
+}
+
+#card-one {
+    font-size: 11px;
+    background-color: darkgrey;
+}
+
+#card-two {
+    font-size: 12px;
+    background-color: white;
+}
+
+h5, h4, h3 {
+    font-style: bold;
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+h5 {
+    color: white;
+}
+
+h4 {
+    color: teal;
+    margin-top: 15px;
+}
+
+h3 {
+    color: black;
+}
+
+#new_message, #message {
+    font-size: 12px;
+    color: darkslategrey;
+    background-color: white;
+}
+
+#channel-title, #channel-value {
+    font-style: bold;
+    font-size: 16px;
+    color: teal;
+    margin-bottom: 10px;
+}
+
+#change, #add-channel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: darkslategrey;
+}
+
+#msg-delete, #msg-submit {
+    font-style: bold;
+    font-size: 13px;
+}
+
+#msg-delete {
+    color: white;
+    background-color: teal;
+    text-align: right;
+    margin-top: 2px;
+}
+
+label {
+    margin-top: 5px;
+    margin-left: 2px;
+    color: darkslategrey;
+}
+
+label:hover {
+    background-color: teal;
+}
+
+.form-check input[type="radio"]:checked + label {
+    background-color:teal;
+    border-color: black;
+    color: white;
+    font-style: bold;
+}
+
+.card {
+    border-color: white;
+}
